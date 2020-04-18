@@ -7,9 +7,8 @@ def sumsqdiff_loop(n):
 
 
 def sumsqdiff_formula(n):
-    sqsum = (n*(n+1)//2)**2
-    sumsq = (n*(n+1)*(2*n+1))//6
-    return sqsum - sumsq
+    ans = n*(n**2-1)*(3*n+2)//12
+    return ans
 
 
 print(sumsqdiff_loop(100))
